@@ -66,6 +66,7 @@ And when we enter a file name doesn’t exist:
 ![image](https://github.com/user-attachments/assets/24e23b8b-4f17-424c-91c4-bf167fb785d1)
 
 So, if the file exists → your server serves it.
+
 If the file doesn’t exist → your server redirects to an appropriate Google search page, based on the file type: Images: tbm=isch, Videos: tbm=vid
 
 
