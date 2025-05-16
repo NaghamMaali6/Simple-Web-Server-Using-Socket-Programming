@@ -1,0 +1,83 @@
+<!DOCTYPE html>  <!-- Declare HTML5 document -->
+
+<html lang="ar" dir="rtl">  <!-- Opens the HTML document, sets the language to Arabic and set text direction from right to left to suit Arabic language -->
+
+<head>
+    <meta charset="UTF-8">  <!-- Sets the character encoding to UTF-8 (supports most characters) -->
+	
+    <title>موارد أمان الشبكات</title>  <!-- Title shown in browser tab -->
+	
+	<!-- Internal CSS styling -->
+    <style>
+        body 
+		{
+            margin: 0;
+            padding: 0;
+            background: url('Images_Videos/SiteImg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            direction: rtl;
+        }
+
+        .overlay
+		{
+            background-color: rgba(0, 0, 50, 0.6);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .form-container
+		{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        h1 
+		{
+            color: #00BFFF;
+        }
+
+        input[type="text"] 
+		{
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        input[type="submit"] 
+		{
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover 
+		{
+            background-color: #104E8B;
+        }
+    </style>
+	
+</head>
+<body>
+    <div class="overlay">  <!-- Dark overlay over background image -->
+        <div class="form-container">  <!-- Container for the form elements -->
+            <h1>موارد أمان الشبكات</h1>  <!-- Main heading -->
+            <form action="/search" method="get">  <!-- Form that sends GET request to /search -->
+                <input type="text" name="file" placeholder="أدخل اسم الملف (مثال: security.png)" required>  <!-- User input -->
+                <input type="submit" value="عرض المورد">  <!-- Submit button -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

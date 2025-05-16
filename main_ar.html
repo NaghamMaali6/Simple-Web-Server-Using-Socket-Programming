@@ -1,0 +1,229 @@
+<!DOCTYPE html>  <!-- Declare HTML5 document -->
+
+<html lang="ar" dir="rtl">  <!-- Opens the HTML document, sets the language to Arabic and set text direction from right to left to suit Arabic language -->
+
+<head>
+    <meta charset="UTF-8">  <!-- Sets the character encoding to UTF-8 (supports most characters) -->
+	
+    <title>خادم الويب ENCS3320</title>  <!-- Sets the browser tab title -->
+    
+	<!-- Internal CSS styling -->
+	<style>
+        body, html 
+		{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        video.bg-video 
+		{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        body 
+		{
+            font-family: Arial, sans-serif;
+            color: #003366;
+        }
+
+        header 
+		{
+            background-color: rgba(240, 248, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            color: dodgerblue;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .tab-title 
+		{
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .team-section 
+		{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .member-box 
+		{
+            background-color: white;
+            border: 3px solid #87ceeb;
+            border-radius: 15px;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 4px 4px 12px rgba(0, 0, 139, 0.2);
+        }
+
+        .member-box img 
+		{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #00bfff;
+        }
+
+        .member-box h3 
+		{
+            color: cornflowerblue;
+            margin: 10px 0 5px;
+        }
+
+        .member-box p 
+		{
+            font-size: 15px;
+            text-align: right;
+            color: midnightblue;
+        }
+
+        .topic-section 
+		{
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 0 15px rgba(70, 130, 180, 0.3);
+            direction: rtl;
+        }
+
+        .topic-section img 
+		{
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .topic-section h2 
+		{
+            color: royalblue;
+        }
+
+        .topic-section h3 
+		{
+            color: mediumblue;
+        }
+
+        .links 
+		{
+            text-align: center;
+            margin: 40px;
+        }
+
+        .links h3 
+		{
+            color: darkblue;
+        }
+
+        .links a 
+		{
+            display: block;
+            margin: 10px;
+            color: dodgerblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover 
+		{
+            color: turquoise;
+        }
+    </style>
+	
+</head>
+<body>
+
+<!-- Background video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="Images_Videos/mainV.mp4" type="video/mp4">
+</video>
+
+<!-- Red Title -->
+<div class="tab-title">خادم الويب ENCS3320</div>
+
+<!-- Welcome Header -->
+<header>
+    مرحبًا بكم في خادم الويب ENCS3320 - شبكات الحاسوب
+</header>
+
+<!-- Section for Team Members -->
+<section class="team-section">
+    <div class="member-box">
+        <img src="Images_Videos/Nagham.png" alt="Nagham Maali">
+        <h3>نغم معالي</h3>
+        <p><ins><strong>الرقم الجامعي:</strong> 1212312</ins></p>
+        <p>
+            أنا نغم معالي، طالبة هندسة حاسوب في جامعة بيرزيت، فلسطين.<br>
+            <em><strong>المشاريع:</strong></em> لايف لاين، ديليڤرا<br>
+            <em><strong>المهارات:</strong></em> بايثون، C، جافا، HTML، CSS، قواعد البيانات<br>
+            <em><strong>الهوايات:</strong></em> البرمجة، القراءة
+        </p>
+    </div>
+
+    <div class="member-box">
+        <img src="Images_Videos/Yosra.png" alt="Yosra Shilo">
+        <h3>يسرى شيلو</h3>
+        <p><ins><strong>الرقم الجامعي:</strong> 1200867</ins></p>
+        <p>
+            أنا يسرى شيلو، طالبة علوم حاسوب في جامعة بيرزيت، فلسطين.<br>
+            <em><strong>المشاريع:</strong></em> تحليل بروتوكولات الشبكات، تقييم أمان التطبيقات<br>
+            <em><strong>المهارات:</strong></em> جافا، HTML/CSS، الشبكات<br>
+            <em><strong>الهوايات:</strong></em> البرمجة، الألعاب
+        </p>
+    </div>
+</section>
+
+<!-- Section for the Topic Explanation -->
+<section class="topic-section">
+    <h2>نظرة عامة على أمان الشبكات</h2>
+    <p><strong>أمان الشبكات</strong> هو مجال حيوي في شبكات الحاسوب يركز على حماية البيانات والموارد أثناء التواصل عبر الشبكات. يساعد في منع الوصول غير المصرح به، وسوء الاستخدام، والتعديل، أو رفض الخدمة.</p>
+    
+    <img src="Images_Videos/Security.jpg" alt="أمان الشبكات">
+
+    <h3>لماذا هو مهم؟</h3>
+    <ul>  <!--Unordered list-->
+        <li>حماية البيانات الحساسة</li>
+        <li>منع الوصول غير المصرح به</li>
+        <li>ضمان سلامة وتوافر البيانات</li>
+    </ul>
+
+    <h3>أنواع التهديدات</h3>
+    <ol>  <!--Ordered list-->
+        <li>البرمجيات الخبيثة (الفيروسات، الديدان، برامج الفدية)</li>
+        <li>هجمات التصيد الاحتيالي</li>
+        <li>هجمات حجب الخدمة (DoS)</li>
+    </ol>
+
+    <p><em>آليات أمان الشبكات</em> تشمل الجدران النارية، أنظمة كشف التسلل (IDS)، التشفير، والبروتوكولات الآمنة مثل HTTPS وSSH.</p>
+</section>
+
+<section class="links">  <!-- Section with Useful Links -->
+    <h3>موارد مفيدة</h3>
+    <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">موقع الكتاب</a>
+    <a href="https://www.birzeit.edu/" target="_blank">جامعة بيرزيت</a>
+    <a href="mySite_1212312_ar.html">موقعي المحلي</a>
+</section>
+
+</body>
+</html>

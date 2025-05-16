@@ -1,0 +1,251 @@
+<!DOCTYPE html>  <!-- Declare HTML5 document -->
+
+<html lang="en">  <!-- Opens the HTML document and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">  <!-- Sets the character encoding to UTF-8 (supports most characters) -->
+    
+    <title>ENCS3320-Webserver</title>  <!-- Sets the browser tab title -->
+
+    <!-- Internal CSS styling -->
+    <style>
+        /* General body and HTML settings */
+        body, html 
+		{
+            margin: 0;               /* Remove default margin */
+            padding: 0;              /* Remove default padding */
+            height: 100%;            /* Make sure they take full height */
+            overflow-x: hidden;      /* Prevent horizontal scroll */
+        }
+
+        /* Style for the background video */
+        video.bg-video 
+		{
+            position: fixed;         /* Fixes video in place */
+            right: 0;
+            bottom: 0;
+            min-width: 100%;         /* Makes sure video fills screen width */
+            min-height: 100%;        /* Makes sure video fills screen height */
+            z-index: -1;             /* Puts video behind other content */
+            object-fit: cover;       /* Makes video scale nicely to cover screen */
+        }
+
+        /* General body text style */
+        body 
+		{
+            font-family: Arial, sans-serif;  /* Font for all text */
+            color: #003366;                  /* Dark blue text color */
+        }
+
+        /* Header style */
+        header 
+		{
+            background-color: rgba(240, 248, 255, 0.8);  /* Transparent baby blue */
+            padding: 20px;               /* Padding inside header */
+            text-align: center;          /* Centered text */
+            color: dodgerblue;           /* Header text color */
+            font-size: 28px;             /* Header font size */
+            font-weight: bold;           /* Bold text */
+        }
+
+        /* Page Title */
+        .tab-title 
+		{
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Container for team members */
+        .team-section 
+		{
+            display: flex;              /* Arrange children in row */
+            flex-wrap: wrap;           /* Wrap to next line if needed */
+            justify-content: center;   /* Center the boxes */
+            gap: 25px;                 /* Space between boxes */
+            padding: 30px;
+        }
+
+        /* Individual member box */
+        .member-box 
+		{
+            background-color: white;
+            border: 3px solid #87ceeb;  /* Skyblue border */
+            border-radius: 15px;        /* Rounded corners */
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 4px 4px 12px rgba(0, 0, 139, 0.2);  /* Soft shadow */
+        }
+
+        /* Member image style */
+        .member-box img 
+		{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;          /* Makes the image circular */
+            object-fit: cover;           /* Crop to fit square */
+            border: 2px solid #00bfff;   /* Border around image */
+        }
+
+        /* Member name */
+        .member-box h3 
+		{
+            color: cornflowerblue;
+            margin: 10px 0 5px;
+        }
+
+        /* Member info text */
+        .member-box p
+		{
+            font-size: 15px;
+            text-align: left;
+            color: midnightblue;
+        }
+
+        /* Section for topic information */
+        .topic-section 
+		{
+            background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white */
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 0 15px rgba(70, 130, 180, 0.3);  /* Light shadow */
+        }
+
+        /* Image in topic section */
+        .topic-section img 
+		{
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* Section main title */
+        .topic-section h2 
+		{
+            color: royalblue;
+        }
+
+        /* Subheadings */
+        .topic-section h3 
+		{
+            color: mediumblue;
+        }
+
+        /* Links section */
+        .links 
+		{
+            text-align: center;
+            margin: 40px;
+        }
+
+        /* Links header */
+        .links h3 
+		{
+            color: darkblue;
+        }
+
+        /* Individual link style */
+        .links a 
+		{
+            display: block;
+            margin: 10px;
+            color: dodgerblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Link hover effect */
+        .links a:hover 
+		{
+            color: turquoise;
+        }
+    </style>
+	
+</head>
+<body>
+
+<!-- Background video -->
+<video class="bg-video" autoplay muted loop playsinline>
+  <source src="Images_Videos/mainV.mp4" type="video/mp4">
+</video>
+
+<!-- Red Title -->
+<div class="tab-title">ENCS3320-Webserver</div>
+
+<!-- Welcome Header -->
+<header>
+    Welcome to ENCS3320 - Computer Networks Webserver
+</header>
+
+<!-- Section for Team Members -->
+<section class="team-section">
+    <!-- Member 1 -->
+    <div class="member-box">
+        <img src="Images_Videos/Nagham.png" alt="Team Member 1"> <!-- Member image -->
+        <h3>Nagham Maali</h3>  <!-- Member name -->
+        <p><ins><strong>ID:</strong> 1212312</ins></p>          <!-- Member ID -->
+        <p>
+            I'm Nagham Maali , a computer engineering student in Birzeit University, Palestine.
+			<br>
+			<em><strong>Projects:</strong></em> LifeLine, Delivra<br>
+            <em><strong>Skills:</strong></em> Python, C, java, HTML, CSS, Database<br>
+            <em><strong>Hobbies:</strong></em> coding, reading
+        </p>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="member-box">
+        <img src="Images_Videos/Yosra.png" alt="Team Member 2">
+        <h3>Yosra Shilo</h3>
+        <p><ins><strong>ID:</strong> 1200867</ins></p>
+        <p>
+            I’m Yosra Shilo , a computer science student in Birzeit University, Palestine.
+			<br>
+			<em><Strong>Projects:</Strong></em> Networking protocol analysis project, Application security assessment project.<br>
+            <em><Strong>Skills:</Strong></em> Java, HTML/CSS, Networking<br>
+            <em><Strong>Hobbies:</Strong></em> Coding, gaming
+        </p>
+    </div>
+</section>
+
+<!-- Section for the Topic Explanation -->
+<section class="topic-section">
+    <h2>Network Security Overview</h2>
+    <p><strong>Network security</strong> is a crucial field in computer networks focused on protecting data and resources during communication over networks. It helps prevent unauthorized access, misuse, modification, or denial of service.</p>
+    
+    <img src="Images_Videos/Security.jpg" alt="Network Security"> <!-- Related image -->
+
+    <h3>Why is it important?</h3>
+    <ul>  <!--Unordered list-->
+        <li>Protects sensitive data</li>
+        <li>Prevents unauthorized access</li>
+        <li>Ensures data integrity and availability</li>
+    </ul>
+
+    <h3>Types of Threats</h3>
+    <ol>  <!--Ordered list-->
+        <li>Malware (viruses, worms, ransomware)</li>
+        <li>Phishing attacks</li>
+        <li>Denial-of-service (DoS) attacks</li>
+    </ol>
+
+    <p><em>Network security mechanisms</em> include firewalls, intrusion detection systems (IDS), encryption, and secure protocols like HTTPS and SSH.</p>
+</section>
+
+<!-- Section with Useful Links -->
+<section class="links">
+    <h3>Useful Resources</h3>
+    <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Textbook Website</a>
+    <a href="https://www.birzeit.edu/" target="_blank">Birzeit University</a>
+    <a href="mySite_1212312_en.html">My Local Site</a>
+</section>
+
+</body>
+</html>
