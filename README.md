@@ -47,11 +47,11 @@ This is just the Arabic version of main_en.htm.
 And when we search for localhost:9932/mySite_1212312_en.html or from it’s link in the main_en.html page:
 ![image](https://github.com/user-attachments/assets/60a6ebc4-5591-466a-809e-fe94ad7b35a0)
 
-This HTML file is called mySite_1212312_en.html, and it’s designed to show a stylish web page related to network security, where users can search for specific files like images.This file is a simple HTML document that creates a clean and visually appealing search page for a network security-related site. It uses elements like <html>, <head>, <meta>, <title>, <style>, <body>, <div>, <form>, <input>, and <h1> to organize and style the page, handle user input, and make the user experience clear and interactive.
+This HTML file is called mySite_1212312_en.html, and it’s designed to show a stylish web page related to network security, where users can search for specific files like images.This file is a simple HTML document that creates a clean and visually appealing search page for a network security-related site. 
 If we enter the name of an existing file (image PNG or JPG or video MP4) in the form:
 
 ![image](https://github.com/user-attachments/assets/fd2f5c0a-6a1e-438f-88c4-40ff3e0ff308)
-![image](https://github.com/user-attachments/assets/a0827a83-ab00-4447-94ae-629b71ede74a)
+![image](https://github.com/user-attachments/assets/4e5ad7d1-c2f4-4d67-9b48-b6340a134618)
 
 And when we enter a file name doesn’t exist:
 
