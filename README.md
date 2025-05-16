@@ -30,6 +30,7 @@ If any error happens during processing, the server logs the error and sends a 40
 
 At the very end, if the user stops the server manually by pressing Ctrl+C, it prints a message saying the server was stopped and closes the main server socket to clean up everything.
 
+
 When we search for localhost:9932/ or localhost:9932/en or localhost:9932/main_en.html: 
 
 ![image](https://github.com/user-attachments/assets/79ff092e-0f62-4415-a82c-18141e58d81c)
@@ -45,7 +46,9 @@ And when we search for localhost:9932/ar or localhost:9932/main_ar.htm:
 ![image](https://github.com/user-attachments/assets/f79e00e3-5b04-4415-ba60-4bec832d553a)
 
 This is just the Arabic version of main_en.htm.
+
 (lang="ar" dir="rtl") is used sets the language to Arabic and set text direction from right to left to suit Arabic language.
+
 
 And when we search for localhost:9932/mySite_1212312_en.html or from it’s link in the main_en.html page:
 
@@ -65,16 +68,19 @@ And when we enter a file name doesn’t exist:
 So, if the file exists → your server serves it.
 If the file doesn’t exist → your server redirects to an appropriate Google search page, based on the file type: Images: tbm=isch, Videos: tbm=vid
 
+
 If we search for localhost:9932/mySite_1212312_ar.html:
 
 ![image](https://github.com/user-attachments/assets/1571008a-ed6d-47db-8d54-def1a799130e)
 ![image](https://github.com/user-attachments/assets/e91cd793-f2fa-4bc2-9694-b702c2a3ca04)
+
 
 If we search for a file doesn’t exist like http://localhost:9932/cs.html:
 
 ![image](https://github.com/user-attachments/assets/2ce18481-22e0-4cf3-b5d2-2b8236f3fa26)
 
 Error404.html code creates a simple custom error page that shows up when a file is not found, like when the user tries to open an image or video that doesn’t exist. 
+
 
 If we click Ctrl+C, and then try to search for a page:
 
