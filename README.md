@@ -45,7 +45,7 @@ And when we search for localhost:9932/ar or localhost:9932/main_ar.htm:
 ![image](https://github.com/user-attachments/assets/f79e00e3-5b04-4415-ba60-4bec832d553a)
 
 This is just the Arabic version of main_en.htm.
-(<html lang="ar" dir="rtl">) is used sets the language to Arabic and set text direction from right to left to suit Arabic language.
+(lang="ar" dir="rtl") is used sets the language to Arabic and set text direction from right to left to suit Arabic language.
 
 And when we search for localhost:9932/mySite_1212312_en.html or from it’s link in the main_en.html page:
 
