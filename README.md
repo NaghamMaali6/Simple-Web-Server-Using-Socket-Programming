@@ -19,6 +19,7 @@ Next, the server is set up to use IPv4 (AF_INET) and TCP connections (SOCK_STREA
 Then there's a function called get_content_type() that checks the type of a file based on its extension. For example, if a file ends with ".html", it returns "text/html" so the browser knows how to handle the file. If the extension isn't recognized, it just sends a general type for binary data.
 
 The server only handles GET requests. If someone tries another method like POST, it responds with a 405 error and closes the connection.
+
 ![image](https://github.com/user-attachments/assets/10750362-0afc-4ced-a2dd-7859fbb0050d)
 
 If the request is for a search using the pattern /search?file=filename, the server extracts the file name from the query. It checks if this file exists in the server directory. If it does, the server opens the file, finds out its content type, and sends both the file and its type back to the client. If the file doesn’t exist, the server redirects the user to a related Google search. For example, if someone searched for an image, it redirects to Google Images. If it's a video, it redirects to Google Videos. Otherwise, it redirects to the normal Google search. This redirection uses a 307 response code.
@@ -30,6 +31,7 @@ If any error happens during processing, the server logs the error and sends a 40
 At the very end, if the user stops the server manually by pressing Ctrl+C, it prints a message saying the server was stopped and closes the main server socket to clean up everything.
 
 When we search for localhost:9932/ or localhost:9932/en or localhost:9932/main_en.html: 
+
 ![image](https://github.com/user-attachments/assets/79ff092e-0f62-4415-a82c-18141e58d81c)
 ![image](https://github.com/user-attachments/assets/af8e4766-75ae-4379-94e5-ebf1885df7f7)
 ![image](https://github.com/user-attachments/assets/65920489-2679-4bd9-9454-91d72b2c4cfe)
@@ -37,14 +39,16 @@ When we search for localhost:9932/ or localhost:9932/en or localhost:9932/main_e
 The file main_en.html is the main English homepage for a web-based project, most likely part of a university assignment related to computer networks (ENCS3320). It demonstrates modern front-end web development using HTML5 and CSS3, while focusing on content presentation, visual design, and responsive layout.
 
 And when we search for localhost:9932/ar or localhost:9932/main_ar.htm:
+
 ![image](https://github.com/user-attachments/assets/17bbe1f9-f66f-47b1-9bdf-42c8d9fbde42)
 ![image](https://github.com/user-attachments/assets/4ceb4bc0-5e83-470f-bf1a-8bc70c0144d5)
 ![image](https://github.com/user-attachments/assets/f79e00e3-5b04-4415-ba60-4bec832d553a)
 
 This is just the Arabic version of main_en.htm.
-<html lang="ar" dir="rtl"> is used sets the language to Arabic and set text direction from right to left to suit Arabic language.
+(<html lang="ar" dir="rtl">) is used sets the language to Arabic and set text direction from right to left to suit Arabic language.
 
 And when we search for localhost:9932/mySite_1212312_en.html or from it’s link in the main_en.html page:
+
 ![image](https://github.com/user-attachments/assets/60a6ebc4-5591-466a-809e-fe94ad7b35a0)
 
 This HTML file is called mySite_1212312_en.html, and it’s designed to show a stylish web page related to network security, where users can search for specific files like images.This file is a simple HTML document that creates a clean and visually appealing search page for a network security-related site. 
@@ -62,15 +66,18 @@ So, if the file exists → your server serves it.
 If the file doesn’t exist → your server redirects to an appropriate Google search page, based on the file type: Images: tbm=isch, Videos: tbm=vid
 
 If we search for localhost:9932/mySite_1212312_ar.html:
+
 ![image](https://github.com/user-attachments/assets/1571008a-ed6d-47db-8d54-def1a799130e)
 ![image](https://github.com/user-attachments/assets/e91cd793-f2fa-4bc2-9694-b702c2a3ca04)
 
 If we search for a file doesn’t exist like http://localhost:9932/cs.html:
+
 ![image](https://github.com/user-attachments/assets/2ce18481-22e0-4cf3-b5d2-2b8236f3fa26)
 
 Error404.html code creates a simple custom error page that shows up when a file is not found, like when the user tries to open an image or video that doesn’t exist. 
 
 If we click Ctrl+C, and then try to search for a page:
+
 ![image](https://github.com/user-attachments/assets/9212e958-82ea-4137-b0c6-cd4987d38cd2)
 
 Once you stopped the server with Ctrl+C, the connection between the browser and server was cut off, so the browser can no longer load any HTML pages, images, or other files from it.
